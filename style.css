@@ -1,0 +1,1389 @@
+/* ------------------------
+   GENERAL STYLES
+------------------------ */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+/* ------------------------
+   NAVBAR LOGO & BRAND
+------------------------ */
+.navbar-brand img.logo {
+    width: 60px;
+    height: auto;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff !important;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: nowrap; /* keep logo and text on same line */
+}
+
+.navbar-brand span.navbar-text {
+    white-space: normal; /* allow text to wrap naturally */
+    line-height: 1.2;
+}
+
+/* ------------------------
+   NAVBAR LINKS
+------------------------ */
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff !important;
+    padding: 0.75rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d8d6d6 !important;
+}
+
+/* Donate Button */
+.donate-btn {
+    background-color: #fdd96e;
+    color: #212529;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
+}
+
+.donate-btn:hover {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+/* ------------------------
+   RESPONSIVE BRAND TEXT
+------------------------ */
+@media (max-width: 991.98px) { /* tablets & below */
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    .navbar-brand img.logo {
+        width: 65px;
+    }
+}
+
+@media (max-width: 575.98px) { /* small phones */
+    .navbar-brand {
+        font-size: 1.1rem;
+        gap: 10px;
+    }
+
+    .navbar-brand img.logo {
+        width: 50px;
+    }
+}
+/* ------------------------
+   HERO SECTION
+------------------------ */
+/* HERO SECTION */
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url("images/background.png") center / cover no-repeat;
+    color: white;
+    padding: 50px 15px;
+}
+
+/* Main Hero Title */
+.hero h1 {
+    font-size: 3.5rem; /* bigger than display-4 */
+    font-weight: 800;  /* extra bold for elegance */
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Subtitle / paragraph */
+.hero p.lead {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero button */
+.hero .btn {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.75rem 1.75rem;
+    border-radius: 8px;
+}
+
+/* ------------------------
+   RESPONSIVE HERO
+------------------------ */
+@media (max-width: 991.98px) { /* tablets & smaller */
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+    .hero p.lead {
+        font-size: 1.3rem;
+    }
+    .hero .btn {
+        font-size: 1.1rem;
+        padding: 0.65rem 1.5rem;
+    }
+}
+
+@media (max-width: 575.98px) { /* phones */
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .hero p.lead {
+        font-size: 1.1rem;
+    }
+    .hero .btn {
+        font-size: 1rem;
+        padding: 0.5rem 1.2rem;
+    }
+}
+/* ------------------------
+   RESPONSIVE HERO
+------------------------ */
+@media (max-width: 991.98px) { /* tablets & smaller */
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .hero p {
+        font-size: 1.1rem;
+    }
+    .hero .btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+@media (max-width: 575.98px) { /* phones */
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .hero .btn {
+        font-size: 0.95rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* ------------------------
+   ABOUT SECTION
+------------------------ */
+.about {
+    background: #f8f9fa;
+    padding: 80px 15px;
+}
+
+.about h2 {
+    font-weight: 800; /* bolder for impact */
+    font-size: 2.4rem;
+    color: #198754;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.about p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* About Highlight / Why We Exist Card */
+.about h4 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #198754;
+    margin-bottom: 20px;
+}
+
+.about ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.about ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Add green checkmarks */
+.about ul li::before {
+    content: "✔";
+    color: #198754;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Remove bottom margin for last item */
+.about ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Card styling for right column */
+.about .col-md-6:last-child {
+    background: #ffffff;
+    padding: 45px 70px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .about h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .about p {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .about h4 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .about ul li {
+        font-size: 1rem;
+        padding-left: 25px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .about h2 {
+        font-size: 1.7rem;
+    }
+    .about p {
+        font-size: 1rem;
+    }
+    .about h4 {
+        font-size: 1.25rem;
+    }
+    .about ul li {
+        font-size: 0.95rem;
+        padding-left: 22px;
+    }
+}
+
+/* ------------------------
+   PROGRAMS SECTION
+------------------------ */
+.programs {
+    padding: 80px 15px;
+    background: #f8f9fa;
+}
+
+.programs .text-center h2 {
+    font-weight: 800;
+    font-size: 2.4rem;
+    color: #198754;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.programs .text-center p {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Cards */
+.programs .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.programs .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
+.programs .card-img-top {
+    height: 260px; /* bigger images */
+    object-fit: cover;
+    width: 100%;
+}
+
+.programs .card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 25px;
+}
+
+.programs .card-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #198754;
+    margin-bottom: 15px;
+}
+
+.programs .card-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: auto;
+}
+
+/* Card buttons */
+.programs .btn-outline-success {
+    margin-top: 15px;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .programs .card-img-top {
+        height: 220px;
+    }
+    .programs .card-title {
+        font-size: 1.2rem;
+    }
+    .programs .card-text {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .programs .card-img-top {
+        height: 200px;
+    }
+    .programs .card-title {
+        font-size: 1.1rem;
+    }
+    .programs .card-text {
+        font-size: 1rem;
+    }
+}
+
+/* ------------------------
+   MISSION & VISION
+------------------------ */
+.mission {
+    padding: 80px 15px;
+}
+
+.mission .row > .col-md-6 > .p-3 {
+    padding: 25px; /* reduced padding to make box shorter */
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    color: white;
+    transition: transform 0.3s ease;
+    min-height: 200px; /* reduce box height */
+
+    /* Center content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center;     /* horizontal center */
+    text-align: center;      /* center text */
+}
+
+/* Mission box gradient */
+.mission .row > .col-md-6:first-child > .p-3 {
+    background: linear-gradient(135deg, #198754, #0c4c39);
+}
+
+/* Vision box gradient */
+.mission .row > .col-md-6:last-child > .p-3 {
+    background: linear-gradient(135deg, #0d6efd, #0b3e64);
+}
+
+/* Headings inside boxes */
+.mission h3 {
+    font-weight: 800;         /* make it bolder */
+    font-size: 1.9rem;        /* bigger font */
+    margin-bottom: 10px;      /* reduce space below title */
+}
+
+/* Paragraphs inside boxes */
+.mission p {
+    font-size: 1.1rem;
+    line-height: 1.5;         /* slightly tighter */
+    margin: 0;                /* remove extra margin */
+}
+
+/* Hover effect */
+.mission .row > .col-md-6 > .p-3:hover {
+    transform: translateY(-6px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .mission h3 {
+        font-size: 1.7rem;
+    }
+    .mission p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .mission h3 {
+        font-size: 1.5rem;
+    }
+    .mission p {
+        font-size: 0.95rem;
+    }
+}
+/* ------------------------
+   GET INVOLVED SECTION
+------------------------ */
+.get-involved {
+    padding: 80px 15px;
+    background-color: #f8f9fa; /* light background */
+}
+
+.get-involved h2 {
+    font-size: 2.5rem; /* big and bold */
+    font-weight: 800;
+    color: #198754; /* same green as other sections */
+    margin-bottom: 20px;
+}
+
+.get-involved p {
+    font-size: 1.2rem; /* slightly bigger text */
+    line-height: 1.7;
+    color: #555; /* muted text */
+    max-width: 700px; /* limit width for readability */
+    margin: 0 auto 30px; /* center paragraph */
+}
+
+.get-involved .btn {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Optional gradient for button */
+.btn-gradient {
+    background: linear-gradient(135deg, #198754, #0c4c39);
+    border: none;
+    color: white;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(135deg, #0c4c39, #198754);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .get-involved h2 {
+        font-size: 2rem;
+    }
+    .get-involved p {
+        font-size: 1.1rem;
+    }
+    .get-involved .btn {
+        font-size: 1.1rem;
+        padding: 0.7rem 1.8rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .get-involved h2 {
+        font-size: 1.7rem;
+    }
+    .get-involved p {
+        font-size: 1rem;
+    }
+    .get-involved .btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+}
+
+
+/* ===== TREE ACTIVITIES SECTION ===== */
+.tree-activities {
+    background:#f8f9fa; 
+    padding: 60px 0;
+}
+
+/* Section Title */
+.tree-activities h2 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    
+
+/* Cards */
+.planting-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.planting-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+}
+
+/* Carousel Images */
+.planting-card img {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Card Body */
+.card-body h5 {
+    color: #198754;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Optional: Carousel Controls Colors */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+
+/* ------------------------*/
+/* CONTACT PAGE */
+/*------------------------*/
+
+.contact-section{
+padding:80px 10%;
+background:#ffffff;
+}
+
+/* SECTION TITLE (same style as other pages) */
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h1{
+color:#1f8a5b;
+font-size:42px;
+margin-bottom:10px;
+font-weight:700;
+}
+
+
+.contact-intro{
+max-width:800px;
+margin:auto;
+font-size:18px;
+color:#555;
+line-height:1.7;
+}
+
+/* CONTACT LAYOUT */
+
+.contact-container{
+display:flex;
+gap:60px;
+justify-content:center;
+align-items:flex-start;
+flex-wrap:wrap;
+}
+
+/* CONTACT INFO */
+
+.contact-info{
+flex:1;
+min-width:300px;
+}
+
+.contact-info h2{
+color:#1f8a5b;
+margin-bottom:20px;
+font: size 30px;
+font-weight:700;
+}
+
+.contact-info p{
+margin-bottom:18px;
+line-height:1.6;
+color:#444;
+font-size:16px;
+}
+
+/* CLICKABLE EMAIL */
+
+.contact-info a{
+color:#609af0;
+font-weight:600;
+text-decoration:none;
+}
+
+.contact-info a:hover{
+text-decoration:underline;
+}
+
+/* CONTACT FORM */
+
+.contact-form{
+flex:1;
+min-width:300px;
+}
+
+.contact-form h2{
+color:#1f8a5b;
+margin-bottom:20px;
+font-size:30px;
+font-weight:700;
+}
+
+.contact-form form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+/* INPUT FIELDS */
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:15px;
+transition:0.3s;
+outline:none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+border-color:#1f8a5b;
+box-shadow:0 0 5px rgba(31,138,91,0.2);
+}
+
+/* BUTTON */
+
+.contact-form button{
+background:#1f8a5b;
+color:white;
+border:none;
+padding:12px;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact-form button:hover{
+background:#166a45;
+transform:translateY(-2px);
+}
+
+
+/* SUPPORT SECTION */
+.support {
+  text-align: center;
+  margin: 60px 0;
+  
+}
+
+.support h2 {
+  color: #166a45;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.support p {
+  color: #555;
+  font-size: 1.3em;
+}
+
+/* DONATION CONTAINER */
+.donation-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* NOTE */
+.note {
+  text-align: center;
+  color: red;
+  font-weight: 600;
+}
+
+/* METHODS GRID */
+.methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* METHOD CARD */
+.method {
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  gap: 10px;
+}
+
+/* ICON */
+.method i {
+  font-size: 42px;
+  margin-bottom: 10px;
+  transition: 0.3s ease;
+}
+
+/* TITLE */
+.method h5 {
+  font-weight: 700;
+  margin: 0;
+}
+
+/* SMALL TEXT */
+.method small {
+  opacity: 0.8;
+}
+
+/* ================= BANK ================= */
+.bank {
+  background: #d0f0fd;
+  color: #0077b6;
+}
+
+.method.bank.active {
+  background: #0077b6;
+  color: #fff;
+}
+
+.method.bank.active i {
+  color: #fff;
+}
+
+/* ================= AIRTEL ================= */
+.airtel {
+  background: #e60000; /* real Airtel red */
+  color: #fff;
+}
+
+.airtel i {
+  color: #fff !important;
+}
+
+.method.airtel.active {
+  background: #ffe6e6;
+  color: #e60000;
+}
+
+.method.airtel.active i {
+  color: #e60000 !important;
+}
+
+/* ================= MTN ================= */
+.mtn {
+  background: #000;
+  color: #ffcc00; /* MTN yellow */
+}
+
+.mtn i {
+  color: #ffcc00 !important;
+}
+
+.method.mtn.active {
+  background: #ffcc00;
+  color: #000;
+}
+
+.method.mtn.active i {
+  color: #000 !important;
+}
+
+/* ================= DETAILS ================= */
+#details {
+  margin-top: 40px;
+  width: 100%;
+}
+
+/* DETAILS BOX */
+.details-box {
+  width: 100%;
+  padding: 30px;
+  border-radius: 20px;
+  background: #f9f9f9;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  animation: fade 0.3s ease;
+}
+
+/* DETAILS TITLE */
+.details-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.details-box p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+/* TABLE (BANK DETAILS) */
+.details-box table {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+/* ================= OPTIONAL COLORS FOR DETAILS ================= */
+.details-box.bank-details {
+  border-left: 6px solid #0077b6;
+}
+
+.details-box.airtel-details {
+  border-left: 6px solid #e60000;
+}
+
+.details-box.mtn-details {
+  border-left: 6px solid #ffcc00;
+}
+
+/* ================= HOVER EFFECT ================= */
+.method:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.select {
+  text-align: center;
+  margin: 30px 0 10px;
+  padding: 25px;
+  border-radius: 15px;
+
+  /* subtle modern background */
+  background: linear-gradient(135deg, #f7f6f6, #e4e7eb);
+
+  /* soft shadow */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* TITLE */
+.select h3 {
+  font-weight: 700;
+  margin: 0;
+  color: #053b1a;
+  position: relative;
+  display: inline-block;
+}
+
+.select {
+  transition: 0.3s;
+}
+
+.select:hover {
+  transform: translateY(-2px);
+}
+
+/* Payment Details design */
+.sub {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* INFO ROW */
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* LABEL */
+.info-row span {
+  font-weight: 500;
+  color: #555;
+}
+
+/* VALUE */
+.info-row strong {
+  font-weight: 600;
+  color: #111;
+}
+
+/* HIGHLIGHT ROW */
+.info-row.highlight {
+  border: 2px solid #ddd;
+  background: #f9f9f9;
+}
+
+/* BANK STYLE */
+.bank-details {
+  border-left: 6px solid #0077b6;
+}
+
+/* AIRTEL STYLE */
+.airtel-details {
+  border-left: 6px solid #e60000;
+}
+
+.airtel-highlight {
+  border-color: #e60000;
+}
+
+/* MTN STYLE */
+.mtn-details {
+  border-left: 6px solid #ffcc00;
+}
+
+.mtn-highlight {
+  border-color: #ffcc00;
+}
+
+/* ICON INSIDE TITLE */
+.details-box h4 i {
+  margin-right: 8px;
+}
+
+/* SMALL ANIMATION */
+.details-box {
+  animation: fade 0.3s ease;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ------------------------ 
+   FOOTER
+------------------------ */
+.footer {
+    background: #1a1a1a; /* dark background */
+    color: #f8f9fa;       /* off-white text */
+    padding: 20px 15px;   /* compact spacing */
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer h5 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #fdd96e; /* gold accent for "Follow Us" */
+}
+
+.footer .social-links {
+    margin-bottom: 10px;
+}
+
+.footer .social-links a {
+    color: #f8f9fa;
+    font-size: 1.2rem;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: #fdd96e; /* gold hover */
+}
+
+.footer p {
+    font-size: 0.85rem;
+    margin: 3px 0;
+    line-height: 1.4;
+}
+
+/* Highlighted name */
+.footer .highlighted-name {
+    color: #fdd96e;   /* gold highlight */
+    font-weight: 700; /* bold */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .highlighted-name:hover {
+    color: #ffc107;   /* slightly darker gold on hover */
+}
+
+/* ========================
+   SKILLS / TVET SECTION
+======================== */
+.skills {
+    background: #f8f9fa;
+    padding: 70px 20px;
+}
+
+/* Section Title */
+.skills h2 {
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.skills .text-muted {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Featured Skill Row */
+.skills .row.align-items-center {
+    margin-bottom: 50px;
+}
+
+.skills h3 {
+    color: #198754;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.skills p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Custom List Style */
+.list-check {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.list-check li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.list-check li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #198754;
+    font-weight: bold;
+}
+
+/* Featured Image */
+.skills .row img {
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills .row img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+/* ========================
+   GALLERY CARDS
+======================== */
+.skill-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img.portrait-img {
+    height: 450px; /* slightly taller for portrait */
+}
+
+/* Overlay effect (optional for hover) */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25,135,84,0.25);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.skill-card:hover .overlay {
+    opacity: 1;
+}
+
+/* Adjust gallery spacing on large screens */
+@media (min-width: 992px) {
+    .col-lg-5 {
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+}
+
+/* ========================
+   SHELTER SECTION
+======================== */
+.shelter-section {
+    padding: 70px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.shelter-section h2 {
+    font-weight: 700;
+    color: #198754;
+    margin-bottom: 20px;
+}
+
+.shelter-section p {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Shelter images */
+.shelter-images {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.shelter-images img {
+    width: 600px;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+}
+
+.shelter-images img:hover {
+    transform: scale(1.03);
+}
+
+
+/* ========================
+   MOBILE IMPROVEMENTS
+======================== */
+@media (max-width: 768px) {
+
+    .skills h2 {
+        font-size: 1.6rem;
+    }
+
+    .skills h3 {
+        margin-top: 15px;
+    }
+
+    .skill-card img {
+        height: 220px;
+    }
+
+    .shelter-images img {
+        width: 100%;
+    }
+}
+
+/* ========================
+   SEXUAL & REPRODUCTIVE HEALTH
+======================== */
+.srh-main {
+    background: #f8f9fa;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Section Title */
+.srh-main h2 {
+    font-weight: 700;
+    position: relative;
+}
+
+/* Subtitle */
+.srh-main .text-muted {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Content Rows */
+.srh-main h4 {
+    color: #198754;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.srh-main p {
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* List with checkmarks */
+.list-check {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.list-check li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.list-check li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #198754;
+    font-weight: bold;
+}
+
+/* Images */
+.srh-main img {
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+}
+
+.srh-main img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+/* ========================
+   GET INVOLVED SECTION
+======================== */
+#get-involved-srh,
+.get-involved {
+    padding: 80px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+#get-involved-srh.bg-light {
+    background: #f8f9fa;
+}
+
+#get-involved-srh h2,
+.get-involved h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #198754;
+    margin-bottom: 20px;
+}
+
+#get-involved-srh p,
+.get-involved p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+/* Get Involved Button (reuse gradient button) */
+#get-involved-srh .btn,
+.get-involved .btn {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    background: linear-gradient(135deg, #28a745, #198754);
+    color: #fff;
+    border: none;
+}
+
+#get-involved-srh .btn:hover,
+.get-involved .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ========================
+   RESPONSIVE
+======================== */
+@media (max-width: 768px) {
+    .srh-main img {
+        margin-bottom: 20px;
+    }
+}
